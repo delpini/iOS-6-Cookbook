@@ -19,6 +19,11 @@
 		B088BBD51826422600CFE41F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B088BBBD1826422600CFE41F /* UIKit.framework */; };
 		B088BBDD1826422600CFE41F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B088BBDB1826422600CFE41F /* InfoPlist.strings */; };
 		B088BBDF1826422600CFE41F /* Exam1_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B088BBDE1826422600CFE41F /* Exam1_2Tests.m */; };
+		B0A9D78C1826445400C60EED /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A9D7891826445400C60EED /* DragView.m */; };
+		B0A9D78D1826445400C60EED /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A9D78B1826445400C60EED /* RootViewController.m */; };
+		B0A9D7921826450A00C60EED /* blueFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A9D78E1826450A00C60EED /* blueFlower.png */; };
+		B0A9D7931826450A00C60EED /* orangeFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A9D78F1826450A00C60EED /* orangeFlower.png */; };
+		B0A9D7941826450A00C60EED /* pinkFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A9D7901826450A00C60EED /* pinkFlower.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,13 @@
 		B088BBDA1826422600CFE41F /* Exam1-2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exam1-2Tests-Info.plist"; sourceTree = "<group>"; };
 		B088BBDC1826422600CFE41F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B088BBDE1826422600CFE41F /* Exam1_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exam1_2Tests.m; sourceTree = "<group>"; };
+		B0A9D7881826445400C60EED /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
+		B0A9D7891826445400C60EED /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
+		B0A9D78A1826445400C60EED /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B0A9D78B1826445400C60EED /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B0A9D78E1826450A00C60EED /* blueFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueFlower.png; sourceTree = "<group>"; };
+		B0A9D78F1826450A00C60EED /* orangeFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = orangeFlower.png; sourceTree = "<group>"; };
+		B0A9D7901826450A00C60EED /* pinkFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinkFlower.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 		B088BBAD1826422600CFE41F = {
 			isa = PBXGroup;
 			children = (
+				B0A9D7911826450A00C60EED /* FlowerArt */,
 				B088BBBF1826422600CFE41F /* Exam1-2 */,
 				B088BBD81826422600CFE41F /* Exam1-2Tests */,
 				B088BBB81826422600CFE41F /* Frameworks */,
@@ -109,6 +122,10 @@
 			children = (
 				B088BBC81826422600CFE41F /* AppDelegate.h */,
 				B088BBC91826422600CFE41F /* AppDelegate.m */,
+				B0A9D7881826445400C60EED /* DragView.h */,
+				B0A9D7891826445400C60EED /* DragView.m */,
+				B0A9D78A1826445400C60EED /* RootViewController.h */,
+				B0A9D78B1826445400C60EED /* RootViewController.m */,
 				B088BBCB1826422600CFE41F /* Images.xcassets */,
 				B088BBC01826422600CFE41F /* Supporting Files */,
 			);
@@ -142,6 +159,17 @@
 				B088BBDB1826422600CFE41F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0A9D7911826450A00C60EED /* FlowerArt */ = {
+			isa = PBXGroup;
+			children = (
+				B0A9D78E1826450A00C60EED /* blueFlower.png */,
+				B0A9D78F1826450A00C60EED /* orangeFlower.png */,
+				B0A9D7901826450A00C60EED /* pinkFlower.png */,
+			);
+			name = FlowerArt;
+			path = "../Exam1-1/FlowerArt";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B088BBC41826422600CFE41F /* InfoPlist.strings in Resources */,
+				B0A9D7921826450A00C60EED /* blueFlower.png in Resources */,
+				B0A9D7941826450A00C60EED /* pinkFlower.png in Resources */,
+				B0A9D7931826450A00C60EED /* orangeFlower.png in Resources */,
 				B088BBCC1826422600CFE41F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +272,8 @@
 			files = (
 				B088BBCA1826422600CFE41F /* AppDelegate.m in Sources */,
 				B088BBC61826422600CFE41F /* main.m in Sources */,
+				B0A9D78D1826445400C60EED /* RootViewController.m in Sources */,
+				B0A9D78C1826445400C60EED /* DragView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +474,7 @@
 				B088BBE41826422600CFE41F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B088BBE51826422600CFE41F /* Build configuration list for PBXNativeTarget "Exam1-2Tests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +483,7 @@
 				B088BBE71826422600CFE41F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
