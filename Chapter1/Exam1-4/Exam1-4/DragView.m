@@ -12,7 +12,8 @@
 
 - (id)initWithImage:(UIImage *)image
 {
-    if(self = [super initWithImage:image]) {
+    if(self = [super initWithImage:image])
+    {
         self.userInteractionEnabled = YES;
         UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc]
                                                  initWithTarget:self
@@ -29,8 +30,6 @@
     // 원래의 중심 위치를 저장
     previousLocation = self.center;
 }
-
-
 
 #pragma mark - Method
 - (void) handlePan: (UIPanGestureRecognizer*) uigr

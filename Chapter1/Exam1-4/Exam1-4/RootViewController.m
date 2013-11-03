@@ -37,6 +37,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     bgView.frame = CGRectInset(self.view.bounds, 64.0f, 64.0f);
+    [self layoutFlowers];
 }
 
 - (void)didReceiveMemoryWarning
@@ -70,6 +71,20 @@
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
     bgView.frame = CGRectInset(self.view.bounds, 64.0f, 64.0f);
+    
+    CGFloat halfFlower = 32.0f;
+    CGRect targetRect = CGRectInset(bgView.bounds, halfFlower * 2, halfFlower * 2);
+    targetRect = CGRectOffset(targetRect, halfFlower, halfFlower);
+    
+    for(UIView *flowerDragger in bgView.subviews)
+    {
+        if(!CGRectContainsPoint(targetRect, flowerDragger.center))
+        {
+            [UIView animateWithDuration:0.3f animations:^(){
+                flowerDragger.center = [self randomFlowerPosition];
+            }];
+        }
+    }
 }
 
 #pragma mark - Method
@@ -86,7 +101,7 @@
 {
     CGFloat halfFlower = 32.0f;
     
-    CGSize insetSize = CGRectInset(self.view.bounds, 2 * halfFlower, 2 * halfFlower).size;
+    CGSize insetSize = CGRectInset(bgView.bounds, 2 * halfFlower, 2 * halfFlower).size;
     
     CGFloat randomX = random() % ((int)insetSize.width) + halfFlower;
     CGFloat randomY = random() % ((int)insetSize.height) + halfFlower;
