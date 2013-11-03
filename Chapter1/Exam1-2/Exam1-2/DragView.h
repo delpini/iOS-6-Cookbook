@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DragView : UIImageView {
-    CGPoint startLocation;
+    CGPoint previousLocation;
 }
 
 @end

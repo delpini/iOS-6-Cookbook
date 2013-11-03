@@ -14,27 +14,30 @@
 {
     if(self = [super initWithImage:image]) {
         self.userInteractionEnabled = YES;
+        UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc]
+                                                 initWithTarget:self
+                                                 action:@selector(handlePan:)];
+        self.gestureRecognizers = @[panRecognizer];
     }
     return self;
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    // 오프셋 값을 계산한 후 저장하고, 필요에 따라 하위 뷰를 앞으로 이동.
-    startLocation = [[touches anyObject] locationInView:self];
+    // 터치한 뷰를 맨 앞으로 이동
     [self.superview bringSubviewToFront:self];
+    // 원래의 중심 위치를 저장
+    previousLocation = self.center;
 }
 
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+
+
+#pragma mark - Method
+- (void) handlePan: (UIPanGestureRecognizer*) uigr
 {
-    // 오프셋 값을 계산
-    CGPoint pt = [[touches anyObject] locationInView:self];
-    float dx = pt.x - startLocation.x;
-    float dy = pt.y - startLocation.y;
-    CGPoint newCenter = CGPointMake(self.center.x + dx,
-                                    self.center.y + dy);
-    // 새로운 위치 설정
-    self.center = newCenter;
+    CGPoint translation = [uigr translationInView:self.superview];
+    self.center = CGPointMake(previousLocation.x + translation.x,
+                              previousLocation.y + translation.y);
 }
 
 /*
