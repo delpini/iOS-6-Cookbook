@@ -19,6 +19,11 @@
 		B088BB86182629E700CFE41F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B088BB6E182629E600CFE41F /* UIKit.framework */; };
 		B088BB8E182629E700CFE41F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B088BB8C182629E700CFE41F /* InfoPlist.strings */; };
 		B088BB90182629E700CFE41F /* Exam1_1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B088BB8F182629E700CFE41F /* Exam1_1Tests.m */; };
+		B088BB9B18262AB200CFE41F /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = B088BB9A18262AB200CFE41F /* DragView.m */; };
+		B088BB9E18262D3900CFE41F /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B088BB9D18262D3900CFE41F /* RootViewController.m */; };
+		B088BBAA182634EB00CFE41F /* blueFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = B088BBA7182634EB00CFE41F /* blueFlower.png */; };
+		B088BBAB182634EB00CFE41F /* orangeFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = B088BBA8182634EB00CFE41F /* orangeFlower.png */; };
+		B088BBAC182634EB00CFE41F /* pinkFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = B088BBA9182634EB00CFE41F /* pinkFlower.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,13 @@
 		B088BB8B182629E700CFE41F /* Exam1-1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exam1-1Tests-Info.plist"; sourceTree = "<group>"; };
 		B088BB8D182629E700CFE41F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B088BB8F182629E700CFE41F /* Exam1_1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exam1_1Tests.m; sourceTree = "<group>"; };
+		B088BB9918262AB200CFE41F /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
+		B088BB9A18262AB200CFE41F /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
+		B088BB9C18262D3900CFE41F /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B088BB9D18262D3900CFE41F /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B088BBA7182634EB00CFE41F /* blueFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueFlower.png; sourceTree = "<group>"; };
+		B088BBA8182634EB00CFE41F /* orangeFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeFlower.png; sourceTree = "<group>"; };
+		B088BBA9182634EB00CFE41F /* pinkFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkFlower.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 		B088BB5E182629E600CFE41F = {
 			isa = PBXGroup;
 			children = (
+				B088BBA6182634EB00CFE41F /* FlowerArt */,
 				B088BB70182629E600CFE41F /* Exam1-1 */,
 				B088BB89182629E700CFE41F /* Exam1-1Tests */,
 				B088BB69182629E600CFE41F /* Frameworks */,
@@ -109,6 +122,10 @@
 			children = (
 				B088BB79182629E600CFE41F /* AppDelegate.h */,
 				B088BB7A182629E600CFE41F /* AppDelegate.m */,
+				B088BB9918262AB200CFE41F /* DragView.h */,
+				B088BB9A18262AB200CFE41F /* DragView.m */,
+				B088BB9C18262D3900CFE41F /* RootViewController.h */,
+				B088BB9D18262D3900CFE41F /* RootViewController.m */,
 				B088BB7C182629E600CFE41F /* Images.xcassets */,
 				B088BB71182629E600CFE41F /* Supporting Files */,
 			);
@@ -142,6 +159,16 @@
 				B088BB8C182629E700CFE41F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B088BBA6182634EB00CFE41F /* FlowerArt */ = {
+			isa = PBXGroup;
+			children = (
+				B088BBA7182634EB00CFE41F /* blueFlower.png */,
+				B088BBA8182634EB00CFE41F /* orangeFlower.png */,
+				B088BBA9182634EB00CFE41F /* pinkFlower.png */,
+			);
+			path = FlowerArt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B088BB75182629E600CFE41F /* InfoPlist.strings in Resources */,
+				B088BBAA182634EB00CFE41F /* blueFlower.png in Resources */,
+				B088BBAC182634EB00CFE41F /* pinkFlower.png in Resources */,
+				B088BBAB182634EB00CFE41F /* orangeFlower.png in Resources */,
 				B088BB7D182629E600CFE41F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +271,8 @@
 			files = (
 				B088BB7B182629E600CFE41F /* AppDelegate.m in Sources */,
 				B088BB77182629E600CFE41F /* main.m in Sources */,
+				B088BB9E18262D3900CFE41F /* RootViewController.m in Sources */,
+				B088BB9B18262AB200CFE41F /* DragView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

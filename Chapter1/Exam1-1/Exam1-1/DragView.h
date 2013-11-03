@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DragView : UIImageView
+@interface DragView : UIImageView {
+    CGPoint startLocation;
+}
 
 @end

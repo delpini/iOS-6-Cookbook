@@ -10,13 +10,31 @@
 
 @implementation DragView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithImage:(UIImage *)image
 {
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
+    if(self = [super initWithImage:image]) {
+        self.userInteractionEnabled = YES;
     }
     return self;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    // 오프셋 값을 계산한 후 저장하고, 필요에 따라 하위 뷰를 앞으로 이동.
+    startLocation = [[touches anyObject] locationInView:self];
+    [self.superview bringSubviewToFront:self];
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    // 오프셋 값을 계산
+    CGPoint pt = [[touches anyObject] locationInView:self];
+    float dx = pt.x - startLocation.x;
+    float dy = pt.y - startLocation.y;
+    CGPoint newCenter = CGPointMake(self.center.x + dx,
+                                    self.center.y + dy);
+    // 새로운 위치 설정
+    self.center = newCenter;
 }
 
 /*
