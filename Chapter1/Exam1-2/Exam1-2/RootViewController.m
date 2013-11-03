@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    self.title = @"Exam1-2";
+    self.title = NSBundle.mainBundle.infoDictionary  [@"CFBundleDisplayName"];
 }
 
 - (void)didReceiveMemoryWarning
