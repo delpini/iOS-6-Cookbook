@@ -1,6 +1,6 @@
 //
 //  RootViewController.m
-//  Exam1-1
+//  Exam1-4
 //
 //  Created by 박경준 on 2013. 11. 3..
 //  Copyright (c) 2013년 Delpini. All rights reserved.
@@ -34,6 +34,11 @@
     self.title = NSBundle.mainBundle.infoDictionary  [@"CFBundleDisplayName"];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    bgView.frame = CGRectInset(self.view.bounds, 64.0f, 64.0f);
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -43,7 +48,11 @@
 - (void)loadView
 {
     [super loadView];
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    bgView = [[UIView alloc] initWithFrame:CGRectZero];
+    bgView.backgroundColor = [UIColor purpleColor];
+    [self.view addSubview:bgView];
     
     NSInteger maxFlowers = 12;
     NSArray *flowerArray = @[@"blueFlower.png", @"pinkFlower.png", @"orangeFlower.png"];
@@ -52,17 +61,22 @@
     {
         NSString *whichFlower = [flowerArray objectAtIndex:(random() % flowerArray.count)];
         DragView *flowerDragger = [[DragView alloc] initWithImage:[UIImage imageNamed:whichFlower]];
-        [self.view addSubview:flowerDragger];
+        [bgView addSubview:flowerDragger];
     }
     // Provide a "Randomize" button
     self.navigationItem.rightBarButtonItem = BARBUTTON(@"Randomize", @selector(layoutFlowers));
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    bgView.frame = CGRectInset(self.view.bounds, 64.0f, 64.0f);
 }
 
 #pragma mark - Method
 - (void)layoutFlowers
 {
     [UIView animateWithDuration:0.3f animations:^(){
-        for(UIView *flowerDragger in self.view.subviews) {
+        for(UIView *flowerDragger in bgView.subviews) {
             flowerDragger.center = [self randomFlowerPosition];
         }
     }];

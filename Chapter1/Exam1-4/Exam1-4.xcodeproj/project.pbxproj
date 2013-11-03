@@ -19,6 +19,11 @@
 		B0DBE8D018265E7F00BB7161 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0DBE8B818265E7F00BB7161 /* UIKit.framework */; };
 		B0DBE8D818265E7F00BB7161 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B0DBE8D618265E7F00BB7161 /* InfoPlist.strings */; };
 		B0DBE8DA18265E7F00BB7161 /* Exam1_4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DBE8D918265E7F00BB7161 /* Exam1_4Tests.m */; };
+		B0DBE8E7182689F400BB7161 /* blueFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DBE8E3182689F400BB7161 /* blueFlower.png */; };
+		B0DBE8E8182689F400BB7161 /* orangeFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DBE8E4182689F400BB7161 /* orangeFlower.png */; };
+		B0DBE8E9182689F400BB7161 /* pinkFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DBE8E5182689F400BB7161 /* pinkFlower.png */; };
+		B0DBE8EE18268A4400BB7161 /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DBE8EB18268A4400BB7161 /* DragView.m */; };
+		B0DBE8EF18268A4400BB7161 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0DBE8ED18268A4400BB7161 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,13 @@
 		B0DBE8D518265E7F00BB7161 /* Exam1-4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exam1-4Tests-Info.plist"; sourceTree = "<group>"; };
 		B0DBE8D718265E7F00BB7161 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B0DBE8D918265E7F00BB7161 /* Exam1_4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exam1_4Tests.m; sourceTree = "<group>"; };
+		B0DBE8E3182689F400BB7161 /* blueFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueFlower.png; sourceTree = "<group>"; };
+		B0DBE8E4182689F400BB7161 /* orangeFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = orangeFlower.png; sourceTree = "<group>"; };
+		B0DBE8E5182689F400BB7161 /* pinkFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinkFlower.png; sourceTree = "<group>"; };
+		B0DBE8EA18268A4400BB7161 /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
+		B0DBE8EB18268A4400BB7161 /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
+		B0DBE8EC18268A4400BB7161 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		B0DBE8ED18268A4400BB7161 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 		B0DBE8A818265E7E00BB7161 = {
 			isa = PBXGroup;
 			children = (
+				B0DBE8E6182689F400BB7161 /* FlowerArt */,
 				B0DBE8BA18265E7F00BB7161 /* Exam1-4 */,
 				B0DBE8D318265E7F00BB7161 /* Exam1-4Tests */,
 				B0DBE8B318265E7E00BB7161 /* Frameworks */,
@@ -109,6 +122,10 @@
 			children = (
 				B0DBE8C318265E7F00BB7161 /* AppDelegate.h */,
 				B0DBE8C418265E7F00BB7161 /* AppDelegate.m */,
+				B0DBE8EA18268A4400BB7161 /* DragView.h */,
+				B0DBE8EB18268A4400BB7161 /* DragView.m */,
+				B0DBE8EC18268A4400BB7161 /* RootViewController.h */,
+				B0DBE8ED18268A4400BB7161 /* RootViewController.m */,
 				B0DBE8C618265E7F00BB7161 /* Images.xcassets */,
 				B0DBE8BB18265E7F00BB7161 /* Supporting Files */,
 			);
@@ -143,6 +160,17 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		B0DBE8E6182689F400BB7161 /* FlowerArt */ = {
+			isa = PBXGroup;
+			children = (
+				B0DBE8E3182689F400BB7161 /* blueFlower.png */,
+				B0DBE8E4182689F400BB7161 /* orangeFlower.png */,
+				B0DBE8E5182689F400BB7161 /* pinkFlower.png */,
+			);
+			name = FlowerArt;
+			path = "/Users/Delpini/Develop/iOS/GIT/iOS-6-Cookbook/Chapter1/Exam1-2/../Exam1-1/FlowerArt";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -220,6 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0DBE8BF18265E7F00BB7161 /* InfoPlist.strings in Resources */,
+				B0DBE8E7182689F400BB7161 /* blueFlower.png in Resources */,
+				B0DBE8E9182689F400BB7161 /* pinkFlower.png in Resources */,
+				B0DBE8E8182689F400BB7161 /* orangeFlower.png in Resources */,
 				B0DBE8C718265E7F00BB7161 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +272,8 @@
 			files = (
 				B0DBE8C518265E7F00BB7161 /* AppDelegate.m in Sources */,
 				B0DBE8C118265E7F00BB7161 /* main.m in Sources */,
+				B0DBE8EF18268A4400BB7161 /* RootViewController.m in Sources */,
+				B0DBE8EE18268A4400BB7161 /* DragView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

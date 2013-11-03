@@ -1,6 +1,6 @@
 //
 //  DragView.m
-//  Exam1-1
+//  Exam1-4
 //
 //  Created by 박경준 on 2013. 11. 3..
 //  Copyright (c) 2013년 Delpini. All rights reserved.
@@ -36,8 +36,19 @@
 - (void) handlePan: (UIPanGestureRecognizer*) uigr
 {
     CGPoint translation = [uigr translationInView:self.superview];
-    self.center = CGPointMake(previousLocation.x + translation.x,
-                              previousLocation.y + translation.y);
+    CGPoint newcenter = CGPointMake(previousLocation.x + translation.x,
+                                    previousLocation.y + translation.y);
+    // 부모 뷰의 경계선으로 이동을 제한
+    float halfx = CGRectGetMidX(self.bounds);
+    newcenter.x = MAX(halfx, newcenter.x);
+    newcenter.x = MIN(self.superview.bounds.size.width - halfx, newcenter.x);
+    
+    float halfy = CGRectGetMidY(self.bounds);
+    newcenter.y = MAX(halfy, newcenter.y);
+    newcenter.y = MIN(self.superview.bounds.size.height - halfy, newcenter.y);
+    
+    // 새로운 중심 위치 설정
+    super.center = newcenter;
 }
 
 /*
