@@ -57,9 +57,9 @@
 		B0A9D7891826445400C60EED /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
 		B0A9D78A1826445400C60EED /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		B0A9D78B1826445400C60EED /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		B0A9D78E1826450A00C60EED /* blueFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueFlower.png; sourceTree = "<group>"; };
-		B0A9D78F1826450A00C60EED /* orangeFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = orangeFlower.png; sourceTree = "<group>"; };
-		B0A9D7901826450A00C60EED /* pinkFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinkFlower.png; sourceTree = "<group>"; };
+		B0A9D78E1826450A00C60EED /* blueFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueFlower.png; sourceTree = "<group>"; };
+		B0A9D78F1826450A00C60EED /* orangeFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeFlower.png; sourceTree = "<group>"; };
+		B0A9D7901826450A00C60EED /* pinkFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkFlower.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,6 +395,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Exam1-2/Exam1-2-Prefix.pch";
 				INFOPLIST_FILE = "Exam1-2/Exam1-2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,6 +409,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Exam1-2/Exam1-2-Prefix.pch";
 				INFOPLIST_FILE = "Exam1-2/Exam1-2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

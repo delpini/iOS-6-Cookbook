@@ -24,6 +24,9 @@
     RootViewController *rv = [[RootViewController alloc] init];
     // UINavigationController 생성
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rv];
+    // 네비게이션 바 투명으로 처리 하지 않게 (YES일 경우, UI가 겹쳐서 나온다.)
+    nav.navigationBar.translucent = NO;
+    // RootViewController 추가
     self.window.rootViewController = nav;
     
     // Override point for customization after application launch.
