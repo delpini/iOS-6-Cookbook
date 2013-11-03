@@ -40,44 +40,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)loadView
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super loadView];
-    self.view.backgroundColor = [UIColor blackColor];
-    
-    NSInteger maxFlowers = 12;
-    NSArray *flowerArray = @[@"blueFlower.png", @"pinkFlower.png", @"orangeFlower.png"];
-    
-    for(int i = 0; i < maxFlowers; i++)
-    {
-        NSString *whichFlower = [flowerArray objectAtIndex:(random() % flowerArray.count)];
-        DragView *flowerDragger = [[DragView alloc] initWithImage:[UIImage imageNamed:whichFlower]];
-        [self.view addSubview:flowerDragger];
-    }
-    // Provide a "Randomize" button
-    self.navigationItem.rightBarButtonItem = BARBUTTON(@"Randomize", @selector(layoutFlowers));
+    sunView = [[DragView alloc] initWithImage:[UIImage imageNamed:@"sun.png"]];
+    [self.view addSubview:sunView];
+    sunView.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    sunView.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation
+{
+    return YES;
 }
 
 #pragma mark - Method
-- (void)layoutFlowers
-{
-    [UIView animateWithDuration:0.3f animations:^(){
-        for(UIView *flowerDragger in self.view.subviews) {
-            flowerDragger.center = [self randomFlowerPosition];
-        }
-    }];
-}
-
-- (CGPoint) randomFlowerPosition
-{
-    CGFloat halfFlower = 32.0f;
-    
-    CGSize insetSize = CGRectInset(self.view.bounds, 2 * halfFlower, 2 * halfFlower).size;
-    
-    CGFloat randomX = random() % ((int)insetSize.width) + halfFlower;
-    CGFloat randomY = random() % ((int)insetSize.height) + halfFlower;
-    
-    return CGPointMake(randomX, randomY);
-}
 
 @end

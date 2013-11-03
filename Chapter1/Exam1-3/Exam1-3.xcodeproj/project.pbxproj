@@ -24,6 +24,7 @@
 		B0A9D7D618264BB700C60EED /* pinkFlower.png in Resources */ = {isa = PBXBuildFile; fileRef = B0A9D7D218264BB700C60EED /* pinkFlower.png */; };
 		B0A9D7DB18264BC400C60EED /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A9D7D818264BC400C60EED /* DragView.m */; };
 		B0A9D7DC18264BC400C60EED /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A9D7DA18264BC400C60EED /* RootViewController.m */; };
+		B0DBE8A6182658BE00BB7161 /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = B0DBE8A5182658BD00BB7161 /* sun.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +54,14 @@
 		B0A9D7C218264B7C00C60EED /* Exam1-3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exam1-3Tests-Info.plist"; sourceTree = "<group>"; };
 		B0A9D7C418264B7C00C60EED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B0A9D7C618264B7C00C60EED /* Exam1_3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exam1_3Tests.m; sourceTree = "<group>"; };
-		B0A9D7D018264BB700C60EED /* blueFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueFlower.png; sourceTree = "<group>"; };
-		B0A9D7D118264BB700C60EED /* orangeFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = orangeFlower.png; sourceTree = "<group>"; };
-		B0A9D7D218264BB700C60EED /* pinkFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinkFlower.png; sourceTree = "<group>"; };
+		B0A9D7D018264BB700C60EED /* blueFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueFlower.png; sourceTree = "<group>"; };
+		B0A9D7D118264BB700C60EED /* orangeFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeFlower.png; sourceTree = "<group>"; };
+		B0A9D7D218264BB700C60EED /* pinkFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkFlower.png; sourceTree = "<group>"; };
 		B0A9D7D718264BC400C60EED /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
 		B0A9D7D818264BC400C60EED /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
 		B0A9D7D918264BC400C60EED /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		B0A9D7DA18264BC400C60EED /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		B0DBE8A5182658BD00BB7161 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				B0A9D7AA18264B7C00C60EED /* InfoPlist.strings */,
 				B0A9D7AD18264B7C00C60EED /* main.m */,
 				B0A9D7AF18264B7C00C60EED /* Exam1-3-Prefix.pch */,
+				B0DBE8A5182658BD00BB7161 /* sun.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0DBE8A6182658BE00BB7161 /* sun.png in Resources */,
 				B0A9D7AC18264B7C00C60EED /* InfoPlist.strings in Resources */,
 				B0A9D7D418264BB700C60EED /* blueFlower.png in Resources */,
 				B0A9D7D618264BB700C60EED /* pinkFlower.png in Resources */,
@@ -474,6 +478,7 @@
 				B0A9D7CC18264B7C00C60EED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0A9D7CD18264B7C00C60EED /* Build configuration list for PBXNativeTarget "Exam1-3Tests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +487,7 @@
 				B0A9D7CF18264B7C00C60EED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

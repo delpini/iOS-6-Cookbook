@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DragView : UIImageView {
-    CGPoint previousLocation;
+@interface DragView : UIImageView<UIGestureRecognizerDelegate> {
+    CGFloat tx;     // x축 이동
+    CGFloat ty;     // y축 이동
+    CGFloat scale;  // 크기 변환
+    CGFloat theta;  // 회전 각도
 }
 
 @end

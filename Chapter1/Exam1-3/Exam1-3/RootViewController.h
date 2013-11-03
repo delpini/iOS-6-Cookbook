@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DragView.h"
 
-@interface RootViewController : UIViewController
+@interface RootViewController : UIViewController {
+    DragView *sunView;
+}
 
 @end
