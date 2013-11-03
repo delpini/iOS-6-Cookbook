@@ -59,6 +59,14 @@
 }
 
 #pragma mark - Method
+- (void)layoutFlowers
+{
+    [UIView animateWithDuration:0.3f animations:^(){
+        for(UIView *flowerDragger in self.view.subviews) {
+            flowerDragger.center = [self randomFlowerPosition];
+        }
+    }];
+}
 
 - (CGPoint) randomFlowerPosition
 {
@@ -70,15 +78,6 @@
     CGFloat randomY = random() % ((int)insetSize.height) + halfFlower;
     
     return CGPointMake(randomX, randomY);
-}
-
-- (void)layoutFlowers
-{
-    [UIView animateWithDuration:0.3f animations:^(){
-        for(UIView *flowerDragger in self.view.subviews) {
-            flowerDragger.center = [self randomFlowerPosition];
-        }
-    }];
 }
 
 @end
