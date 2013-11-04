@@ -465,6 +465,7 @@
 				B0BEE9D41827AA1500F13CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0BEE9D51827AA1500F13CFB /* Build configuration list for PBXNativeTarget "Exam1-9Tests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +474,7 @@
 				B0BEE9D71827AA1500F13CFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

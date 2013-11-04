@@ -1,18 +1,18 @@
 //
-//  Example1_10Tests.m
-//  Example1-10Tests
+//  Exam1_10Tests.m
+//  Exam1-10Tests
 //
-//  Created by 박경준 on 2013. 11. 4..
+//  Created by 박경준 on 2013. 11. 5..
 //  Copyright (c) 2013년 Delpini. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface Example1_10Tests : XCTestCase
+@interface Exam1_10Tests : XCTestCase
 
 @end
 
-@implementation Example1_10Tests
+@implementation Exam1_10Tests
 
 - (void)setUp
 {

@@ -1,8 +1,8 @@
 //
 //  main.m
-//  Example1-10
+//  Exam1-12
 //
-//  Created by 박경준 on 2013. 11. 4..
+//  Created by 박경준 on 2013. 11. 5..
 //  Copyright (c) 2013년 Delpini. All rights reserved.
 //
 
