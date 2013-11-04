@@ -7,12 +7,28 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+
+#define COOKBOOK_PURPLE_COLOR        [UIColor colorWithRed:0.20392f green:0.19607f blue:0.61176f alpha:1.0f]
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    //
+    [application setStatusBarHidden:YES];
+    [[UINavigationBar appearance] setTintColor:COOKBOOK_PURPLE_COLOR];
+    // RootViewController 생성
+    RootViewController *rv = [[RootViewController alloc] init];
+    // UINavigationController 생성
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rv];
+    // 네비게이션 바 투명으로 처리 하지 않게 (YES일 경우, UI가 겹쳐서 나온다.)
+    nav.navigationBar.translucent = NO;
+    // RootViewController 추가
+    self.window.rootViewController = nav;
+    
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
