@@ -64,7 +64,7 @@
 #pragma mark - Method
 - (void) clear
 {
-    
+    [(TouchTrackerView *)self.view clear];
 }
 
 @end

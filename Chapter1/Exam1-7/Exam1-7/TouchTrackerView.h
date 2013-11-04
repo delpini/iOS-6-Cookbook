@@ -13,4 +13,5 @@
     UIBezierPath *path;
 }
 
+- (void)clear;
 @end
