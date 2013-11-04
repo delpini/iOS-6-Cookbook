@@ -58,6 +58,12 @@
     [path stroke];
 }
 
+- (void)clear
+{
+    path = nil;
+    [self setNeedsDisplay];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

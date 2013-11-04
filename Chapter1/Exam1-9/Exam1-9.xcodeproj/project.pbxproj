@@ -21,6 +21,8 @@
 		B0BEE9CF1827AA1500F13CFB /* Exam1_9Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BEE9CE1827AA1500F13CFB /* Exam1_9Tests.m */; };
 		B0BEE9DA1827AA4200F13CFB /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BEE9D91827AA4200F13CFB /* RootViewController.m */; };
 		B0BEE9DD1827AA4800F13CFB /* TouchTrackerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BEE9DC1827AA4800F13CFB /* TouchTrackerView.m */; };
+		B0BEE9E21827CAA200F13CFB /* UIBezierPath+Points.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BEE9DF1827CAA200F13CFB /* UIBezierPath+Points.m */; };
+		B0BEE9E31827CAA200F13CFB /* UIBezierPath+Smoothing.m in Sources */ = {isa = PBXBuildFile; fileRef = B0BEE9E11827CAA200F13CFB /* UIBezierPath+Smoothing.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		B0BEE9D91827AA4200F13CFB /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		B0BEE9DB1827AA4800F13CFB /* TouchTrackerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchTrackerView.h; sourceTree = "<group>"; };
 		B0BEE9DC1827AA4800F13CFB /* TouchTrackerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchTrackerView.m; sourceTree = "<group>"; };
+		B0BEE9DE1827CAA200F13CFB /* UIBezierPath+Points.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Points.h"; sourceTree = "<group>"; };
+		B0BEE9DF1827CAA200F13CFB /* UIBezierPath+Points.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Points.m"; sourceTree = "<group>"; };
+		B0BEE9E01827CAA200F13CFB /* UIBezierPath+Smoothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Smoothing.h"; sourceTree = "<group>"; };
+		B0BEE9E11827CAA200F13CFB /* UIBezierPath+Smoothing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Smoothing.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,10 @@
 				B0BEE9DC1827AA4800F13CFB /* TouchTrackerView.m */,
 				B0BEE9D81827AA4200F13CFB /* RootViewController.h */,
 				B0BEE9D91827AA4200F13CFB /* RootViewController.m */,
+				B0BEE9DE1827CAA200F13CFB /* UIBezierPath+Points.h */,
+				B0BEE9DF1827CAA200F13CFB /* UIBezierPath+Points.m */,
+				B0BEE9E01827CAA200F13CFB /* UIBezierPath+Smoothing.h */,
+				B0BEE9E11827CAA200F13CFB /* UIBezierPath+Smoothing.m */,
 				B0BEE9BB1827AA1500F13CFB /* Images.xcassets */,
 				B0BEE9B01827AA1500F13CFB /* Supporting Files */,
 			);
@@ -249,9 +259,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0BEE9E31827CAA200F13CFB /* UIBezierPath+Smoothing.m in Sources */,
 				B0BEE9BA1827AA1500F13CFB /* AppDelegate.m in Sources */,
 				B0BEE9B61827AA1500F13CFB /* main.m in Sources */,
 				B0BEE9DA1827AA4200F13CFB /* RootViewController.m in Sources */,
+				B0BEE9E21827CAA200F13CFB /* UIBezierPath+Points.m in Sources */,
 				B0BEE9DD1827AA4800F13CFB /* TouchTrackerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

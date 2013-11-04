@@ -8,6 +8,7 @@
 #import "TouchTrackerView.h"
 #import "UIBezierPath+Smoothing.h"
 
+#define IS_IPAD        (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define COOKBOOK_PURPLE_COLOR        [UIColor colorWithRed:0.20392f green:0.19607f blue:0.61176f alpha:1.0f]
 
 @implementation TouchTrackerView
@@ -16,7 +17,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.multipleTouchEnabled = NO;
+        self.multipleTouchEnabled = YES;
         strokes = [NSMutableArray array];
         touchPaths = [NSMutableDictionary dictionary];
     }
@@ -25,26 +26,49 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    // 사용자 제스쳐 인식을 위한 새 경로 초기화
-    path = [UIBezierPath bezierPath];
-    path.lineWidth = 4.0f;
-    UITouch *touch = [touches anyObject];
-    [path moveToPoint:[touch locationInView:self]];
+    for(UITouch * touch in touches)
+    {
+        NSString *key = [NSString stringWithFormat:@"%d", (int)touch];
+        CGPoint pt = [touch locationInView:self];
+        UIBezierPath *path = [UIBezierPath bezierPath];
+        path.lineWidth = IS_IPAD ? 8.0f : 4.0f;
+        path.lineCapStyle = kCGLineCapRound;
+        [path moveToPoint:pt];
+        [touchPaths setObject:path forKey:key];
+    }
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    // 경로에 터치로 인식된 새 지점 추가
-    UITouch *touch = [touches anyObject];
-    [path addLineToPoint:[touch locationInView:self]];
+    for (UITouch *touch in touches)
+    {
+        NSString *key = [NSString stringWithFormat:@"%d", (int) touch];
+        UIBezierPath *path = [touchPaths objectForKey:key];
+        if (!path)
+        {
+            break;
+        }
+        
+        CGPoint pt = [touch locationInView:self];
+        [path addLineToPoint:pt];
+    }
+    
     [self setNeedsDisplay];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    UITouch *touch = [touches anyObject];
-    [path addLineToPoint:[touch locationInView:self]];
-    path = [path smoothedPath:4];
+    for (UITouch *touch in touches)
+    {
+        NSString *key = [NSString stringWithFormat:@"%d", (int) touch];
+        UIBezierPath *path = [touchPaths objectForKey:key];
+        if (path) {
+            path = [path smoothedPath:4];
+            [strokes addObject:path];
+        }
+        [touchPaths removeObjectForKey:key];
+    }
+    
     [self setNeedsDisplay];
 }
 
@@ -56,7 +80,15 @@
 - (void)drawRect:(CGRect)rect
 {
     [COOKBOOK_PURPLE_COLOR set];
-    [path stroke];
+    for (UIBezierPath *path in strokes)
+    {
+        [path stroke];
+    }
+    [[COOKBOOK_PURPLE_COLOR colorWithAlphaComponent:0.5f] set];
+    for (UIBezierPath *path in [touchPaths allValues])
+    {
+        [path stroke];
+    }
 }
 
 # pragma mark - Method
