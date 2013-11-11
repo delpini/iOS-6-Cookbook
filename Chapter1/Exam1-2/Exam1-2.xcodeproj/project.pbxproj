@@ -89,7 +89,6 @@
 		B088BBAD1826422600CFE41F = {
 			isa = PBXGroup;
 			children = (
-				B0A9D7911826450A00C60EED /* FlowerArt */,
 				B088BBBF1826422600CFE41F /* Exam1-2 */,
 				B088BBD81826422600CFE41F /* Exam1-2Tests */,
 				B088BBB81826422600CFE41F /* Frameworks */,
@@ -120,6 +119,7 @@
 		B088BBBF1826422600CFE41F /* Exam1-2 */ = {
 			isa = PBXGroup;
 			children = (
+				B0A9D7911826450A00C60EED /* FlowerArt */,
 				B088BBC81826422600CFE41F /* AppDelegate.h */,
 				B088BBC91826422600CFE41F /* AppDelegate.m */,
 				B0A9D7881826445400C60EED /* DragView.h */,
@@ -169,7 +169,7 @@
 				B0A9D7901826450A00C60EED /* pinkFlower.png */,
 			);
 			name = FlowerArt;
-			path = "../Exam1-1/FlowerArt";
+			path = "../../Exam1-1/FlowerArt";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

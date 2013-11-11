@@ -89,7 +89,6 @@
 		B088BB5E182629E600CFE41F = {
 			isa = PBXGroup;
 			children = (
-				B088BBA6182634EB00CFE41F /* FlowerArt */,
 				B088BB70182629E600CFE41F /* Exam1-1 */,
 				B088BB89182629E700CFE41F /* Exam1-1Tests */,
 				B088BB69182629E600CFE41F /* Frameworks */,
@@ -120,6 +119,7 @@
 		B088BB70182629E600CFE41F /* Exam1-1 */ = {
 			isa = PBXGroup;
 			children = (
+				B088BBA6182634EB00CFE41F /* FlowerArt */,
 				B088BB79182629E600CFE41F /* AppDelegate.h */,
 				B088BB7A182629E600CFE41F /* AppDelegate.m */,
 				B088BB9918262AB200CFE41F /* DragView.h */,
@@ -168,7 +168,8 @@
 				B088BBA8182634EB00CFE41F /* orangeFlower.png */,
 				B088BBA9182634EB00CFE41F /* pinkFlower.png */,
 			);
-			path = FlowerArt;
+			name = FlowerArt;
+			path = ../FlowerArt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +474,7 @@
 				B088BB95182629E700CFE41F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B088BB96182629E700CFE41F /* Build configuration list for PBXNativeTarget "Exam1-1Tests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +483,7 @@
 				B088BB98182629E700CFE41F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

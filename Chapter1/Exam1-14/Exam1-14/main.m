@@ -1,9 +1,9 @@
 //
 //  main.m
-//  Example1-14
+//  Exam1-14
 //
-//  Created by 박경준 on 2013. 11. 4..
-//  Copyright (c) 2013년 Delpini. All rights reserved.
+//  Created by 박경준 on 2013. 11. 11..
+//  Copyright (c) 2013년 박경준. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

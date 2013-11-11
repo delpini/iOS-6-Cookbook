@@ -53,9 +53,9 @@
 		B0DBE8D518265E7F00BB7161 /* Exam1-4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exam1-4Tests-Info.plist"; sourceTree = "<group>"; };
 		B0DBE8D718265E7F00BB7161 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B0DBE8D918265E7F00BB7161 /* Exam1_4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exam1_4Tests.m; sourceTree = "<group>"; };
-		B0DBE8E3182689F400BB7161 /* blueFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = blueFlower.png; sourceTree = "<group>"; };
-		B0DBE8E4182689F400BB7161 /* orangeFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = orangeFlower.png; sourceTree = "<group>"; };
-		B0DBE8E5182689F400BB7161 /* pinkFlower.png */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinkFlower.png; sourceTree = "<group>"; };
+		B0DBE8E3182689F400BB7161 /* blueFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueFlower.png; sourceTree = "<group>"; };
+		B0DBE8E4182689F400BB7161 /* orangeFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeFlower.png; sourceTree = "<group>"; };
+		B0DBE8E5182689F400BB7161 /* pinkFlower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkFlower.png; sourceTree = "<group>"; };
 		B0DBE8EA18268A4400BB7161 /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
 		B0DBE8EB18268A4400BB7161 /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
 		B0DBE8EC18268A4400BB7161 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
@@ -89,7 +89,6 @@
 		B0DBE8A818265E7E00BB7161 = {
 			isa = PBXGroup;
 			children = (
-				B0DBE8E6182689F400BB7161 /* FlowerArt */,
 				B0DBE8BA18265E7F00BB7161 /* Exam1-4 */,
 				B0DBE8D318265E7F00BB7161 /* Exam1-4Tests */,
 				B0DBE8B318265E7E00BB7161 /* Frameworks */,
@@ -120,6 +119,7 @@
 		B0DBE8BA18265E7F00BB7161 /* Exam1-4 */ = {
 			isa = PBXGroup;
 			children = (
+				B0DBE8E6182689F400BB7161 /* FlowerArt */,
 				B0DBE8C318265E7F00BB7161 /* AppDelegate.h */,
 				B0DBE8C418265E7F00BB7161 /* AppDelegate.m */,
 				B0DBE8EA18268A4400BB7161 /* DragView.h */,
@@ -474,6 +474,7 @@
 				B0DBE8DF18265E7F00BB7161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0DBE8E018265E7F00BB7161 /* Build configuration list for PBXNativeTarget "Exam1-4Tests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +483,7 @@
 				B0DBE8E218265E7F00BB7161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

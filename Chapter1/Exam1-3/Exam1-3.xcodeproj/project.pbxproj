@@ -91,8 +91,6 @@
 		B0A9D79518264B7B00C60EED = {
 			isa = PBXGroup;
 			children = (
-				B0DBE8A718265DCE00BB7161 /* Image */,
-				B0A9D7D318264BB700C60EED /* FlowerArt */,
 				B0A9D7A718264B7C00C60EED /* Exam1-3 */,
 				B0A9D7C018264B7C00C60EED /* Exam1-3Tests */,
 				B0A9D7A018264B7C00C60EED /* Frameworks */,
@@ -123,6 +121,8 @@
 		B0A9D7A718264B7C00C60EED /* Exam1-3 */ = {
 			isa = PBXGroup;
 			children = (
+				B0DBE8A718265DCE00BB7161 /* Image */,
+				B0A9D7D318264BB700C60EED /* FlowerArt */,
 				B0A9D7B018264B7C00C60EED /* AppDelegate.h */,
 				B0A9D7B118264B7C00C60EED /* AppDelegate.m */,
 				B0A9D7D718264BC400C60EED /* DragView.h */,
@@ -181,6 +181,7 @@
 				B0DBE8A5182658BD00BB7161 /* sun.png */,
 			);
 			name = Image;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
